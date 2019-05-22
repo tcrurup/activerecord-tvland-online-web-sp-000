@@ -3,7 +3,7 @@ class Character < ActiveRecord::Base
   belongs_to :actor
   
   def build_network(call_letters:)
-    Network.create
+    Network.create(call_letters)
   end
   
   def say_that_thing_you_say
